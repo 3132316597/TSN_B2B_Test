@@ -47,6 +47,7 @@ typedef enum {
     SOURCE_BOARD2        // 板子2来源（ID2）
 } FrameSource;
 
+
 /* Exported variables ---------------------------------------------------------*/
 /* Exported functions ---------------------------------------------------------*/
 int Bsp_InitTsw(void);
@@ -54,9 +55,11 @@ int Bsp_TransmitTswFrameLowLevel(uint8_t *payload, int len);
 int Bsp_ReceiveTswFrameLowLevel(uint8_t *payload, int toReadLen);
 void Bsp_GetTswMacAddr(uint8_t *pMac);
 bool tsw_get_link_status(uint8_t index);
-hpm_stat_t reset_tsw_phy_port1(void);
-hpm_stat_t reset_tsw_phy_port2(void);
-hpm_stat_t reset_tsw_phy_port3(void);
+hpm_stat_t reset_tsw_phy_port(uint8_t port);
+
+
+extern rx_hdr_desc_t g_rx_hdr_cache;          // 缓存最新的帧头数据
+extern volatile bool g_rx_hdr_updated;        // 帧头更新标志（中断置位，主函数清零）
 
 extern uint8_t g_tsw_queue, recv_global_port, send_global_port;
 extern bool rx_flag;

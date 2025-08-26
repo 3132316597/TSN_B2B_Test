@@ -41,6 +41,12 @@ static tsw_phy_status_t phy3_last_status = {0};        // PHY3上次状态缓存
 uint32_t irq_frame_cnt = 0;                      // 中断计数器
 uint8_t recv_global_port = 0, send_global_port = 1;  // 全局收发端口标识
 static tsw_frame_t frame[16] = {0};                     // TSW帧结构数组
+
+// 定义全局帧头缓存（初始化为空）
+rx_hdr_desc_t g_rx_hdr_cache = {0};
+// 定义更新标志（初始无更新）
+volatile bool g_rx_hdr_updated = false;
+
 // 非缓存区定义（接收缓冲区）
 ATTR_PLACE_AT_FAST_RAM_WITH_ALIGNMENT(TSW_SOC_DATA_BUS_WIDTH)
 __RW uint8_t tsw_rx_buff[TSW_RECV_DESC_COUNT][TSW_RECV_BUFF_LEN];
@@ -72,7 +78,7 @@ uint8_t data_buf_p[UDP_BUFFER_SIZE];                   // 低优先级帧数据缓存
 uint8_t mac2pc1[6] = {0x08, 0x92, 0x04, 0x1e, 0xb9, 0x62};  // 端口1目标MAC（PC1）
 uint8_t mac2pc2[6] = {0x7C, 0x4D, 0x8F, 0xAA, 0xCC, 0x67};  // 端口2目标MAC（PC2）
 uint8_t mac2pc3[6] = {0x98, 0x2C, 0xBC, 0xB1, 0x9F, 0x17};  // 端口3目标MAC（PC3）
-uint8_t mac2cpu[6] = {0x4e, 0x00, 0x00, 0x00, 0xf0, 0x64};   // CPU自身MAC
+uint8_t mac2cpu[6] = {0x4e, 0x00, 0x00, 0x00, 0xf0, 0x32};   // CPU自身MAC
 
 
 volatile tsn_frame_t tsn_frame = {0};  // TSN帧结构（volatile确保内存可见性）
@@ -444,6 +450,7 @@ int Bsp_InitTsw(void) {
         tsw_fpe_set_mms_ctrl(HPM_TSW, ports[i], &fpe_config);
         tsw_fpe_enable_mms(HPM_TSW, ports[i]);
     }
+    
     printf("TSW initialization success !!!\n");
     return 0;
 }
@@ -574,6 +581,8 @@ void isr_tsw_port_cpu(void) {
         if (free_space >= required_space) {
             ByteRingBuf_WriteFrame(ring_buf, (void*)&tsw_rx_buff[frame[idx].id][0], frame[idx].length);
             is_preemptible ? FPE_1++ : FPE_0++; // 更新帧计数
+            g_rx_hdr_cache = *rx_hdr;
+            g_rx_hdr_updated = true;
         } else {
             recv_fail_time++;
             printf("[TSW ISR] Buffer overflow! Required: %d, Free: %d\n", required_space, free_space);

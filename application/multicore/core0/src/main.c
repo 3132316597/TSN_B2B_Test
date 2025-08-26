@@ -7,7 +7,7 @@
 uint64_t idx = 0;
 uint8_t recv_data[1536];
 uint16_t len;
-
+rx_hdr_desc_t local_rx_hdr;
 ATTR_PLACE_AT_NONCACHEABLE uint8_t s_FrameTx[1536];
 
 ATTR_PLACE_AT_NONCACHEABLE TswFrame_t s_tsw_frame = {
@@ -33,7 +33,7 @@ int DATA_MAKE()
 
     uint8_t des_mac[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF};
     memcpy(s_tsw_frame.dest_mac, des_mac, 6);
-    Bsp_GetTswMacAddr(s_tsw_frame.src_mac); // 源MAC仅需初始化一次（若不变）
+    Bsp_GetTswMacAddr(s_tsw_frame.src_mac); 
     
     uint8_t device_id[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xCC};
     memcpy(s_tsw_frame.device_id, device_id, 6);
@@ -88,10 +88,21 @@ int main(void)
     while (1) {
         if(tsw_get_link_status(TSW_TSNPORT_PORT1))
         {
+            if (g_rx_hdr_updated) {
+                local_rx_hdr = g_rx_hdr_cache;
+                g_rx_hdr_updated = false;
+            }
             if(rx_flag)
             {
                 len = Bsp_ReceiveTswFrameLowLevel(recv_data, sizeof(recv_data)); 
                 printf("Recv Frame Len : %d\n", len);
+                printf("\n[Main] RX Header Details: \n");
+                printf("  Source Port: %d\n", local_rx_hdr.rx_hdr0_bm.src_port);
+                printf("  Preemptible Frame (fpe): %s\n", local_rx_hdr.rx_hdr0_bm.fpe ? "Yes" : "No");
+                printf("  Queue: %d\n", local_rx_hdr.rx_hdr0_bm.queue);
+                printf("  Timestamp: 0x%08X%08X\n", 
+                    local_rx_hdr.timestamp_hi, 
+                    local_rx_hdr.timestamp_lo);
             }
         }
     }

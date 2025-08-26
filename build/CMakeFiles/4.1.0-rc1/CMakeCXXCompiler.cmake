@@ -1,4 +1,4 @@
-set(CMAKE_CXX_COMPILER "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe")
+set(CMAKE_CXX_COMPILER "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe")
 set(CMAKE_CXX_COMPILER_ARG1 "")
 set(CMAKE_CXX_COMPILER_ID "GNU")
 set(CMAKE_CXX_COMPILER_VERSION "13.2.0")
@@ -25,11 +25,11 @@ set(CMAKE_CXX_COMPILER_ARCHITECTURE_ID "")
 
 
 
-set(CMAKE_AR "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ar.exe")
-set(CMAKE_CXX_COMPILER_AR "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe")
-set(CMAKE_RANLIB "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ranlib.exe")
-set(CMAKE_CXX_COMPILER_RANLIB "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe")
-set(CMAKE_LINKER "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ld.exe")
+set(CMAKE_AR "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ar.exe")
+set(CMAKE_CXX_COMPILER_AR "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe")
+set(CMAKE_RANLIB "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ranlib.exe")
+set(CMAKE_CXX_COMPILER_RANLIB "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe")
+set(CMAKE_LINKER "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ld.exe")
 set(CMAKE_LINKER_LINK "")
 set(CMAKE_LINKER_LLD "")
 set(CMAKE_CXX_COMPILER_LINKER "")

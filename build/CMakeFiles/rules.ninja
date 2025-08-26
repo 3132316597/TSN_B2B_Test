@@ -17,7 +17,7 @@
 rule C_COMPILER__app_unscanned_debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\SEGGER\toolchains\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -25,7 +25,7 @@ rule C_COMPILER__app_unscanned_debug
 # Rule for linking C executable.
 
 rule C_EXECUTABLE_LINKER__demo.2eelf_debug
-  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\SEGGER\toolchains\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $FLAGS $LINK_FLAGS $in -o $TARGET_FILE $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
   description = Linking C executable $TARGET_FILE
   restat = $RESTAT
 
@@ -44,7 +44,7 @@ rule CUSTOM_COMMAND
 rule C_COMPILER__hpm_sdk_lib_unscanned_debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\SEGGER\toolchains\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -52,7 +52,7 @@ rule C_COMPILER__hpm_sdk_lib_unscanned_debug
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__hpm_sdk_lib_debug
-  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-ar.exe crD $TARGET_FILE $LINK_FLAGS $in && $POST_BUILD"
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\SEGGER\toolchains\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-ar.exe crD $TARGET_FILE $LINK_FLAGS $in && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -63,7 +63,7 @@ rule C_STATIC_LIBRARY_LINKER__hpm_sdk_lib_debug
 rule C_COMPILER__hpm_sdk_gcc_lib_unscanned_debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\SEGGER\toolchains\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -71,7 +71,7 @@ rule C_COMPILER__hpm_sdk_gcc_lib_unscanned_debug
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__hpm_sdk_gcc_lib_debug
-  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-ar.exe crD $TARGET_FILE $LINK_FLAGS $in && $POST_BUILD"
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\SEGGER\toolchains\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-ar.exe crD $TARGET_FILE $LINK_FLAGS $in && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -82,7 +82,7 @@ rule C_STATIC_LIBRARY_LINKER__hpm_sdk_gcc_lib_debug
 rule ASM_COMPILER__hpm_sdk_gcc_startup_lib_unscanned_debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\SEGGER\toolchains\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building ASM object $out
 
 
@@ -92,7 +92,7 @@ rule ASM_COMPILER__hpm_sdk_gcc_startup_lib_unscanned_debug
 rule C_COMPILER__hpm_sdk_gcc_startup_lib_unscanned_debug
   depfile = $DEP_FILE
   deps = gcc
-  command = ${LAUNCHER}${CODE_CHECK}D:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  command = ${LAUNCHER}${CODE_CHECK}D:\SEGGER\toolchains\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-gcc.exe $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
   description = Building C object $out
 
 
@@ -100,7 +100,7 @@ rule C_COMPILER__hpm_sdk_gcc_startup_lib_unscanned_debug
 # Rule for linking C static library.
 
 rule C_STATIC_LIBRARY_LINKER__hpm_sdk_gcc_startup_lib_debug
-  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-ar.exe crD $TARGET_FILE $LINK_FLAGS $in && $POST_BUILD"
+  command = C:\Windows\system32\cmd.exe /C "$PRE_LINK && D:\SEGGER\toolchains\rv32imac_zicsr_zifencei_multilib_b_ext-win\bin\riscv32-unknown-elf-ar.exe crD $TARGET_FILE $LINK_FLAGS $in && $POST_BUILD"
   description = Linking C static library $TARGET_FILE
   restat = $RESTAT
 
@@ -109,7 +109,7 @@ rule C_STATIC_LIBRARY_LINKER__hpm_sdk_gcc_startup_lib_debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = D:\Cmake\bin\cmake.exe --regenerate-during-build -SD:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\application\multicore\core0 -BD:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\build
+  command = D:\Cmake\bin\cmake.exe --regenerate-during-build -SD:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame_slave\application\multicore\core0 -BD:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame_slave\build
   description = Re-running CMake...
   generator = 1
 
@@ -118,7 +118,7 @@ rule RERUN_CMAKE
 # Rule for cleaning all built files.
 
 rule CLEAN
-  command = d:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\ninja\ninja.exe $FILE_ARG -t clean $TARGETS
+  command = d:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame_slave\tools\ninja\ninja.exe $FILE_ARG -t clean $TARGETS
   description = Cleaning all built files...
 
 
@@ -126,6 +126,6 @@ rule CLEAN
 # Rule for printing all primary targets available.
 
 rule HELP
-  command = d:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\tools\ninja\ninja.exe -t targets
+  command = d:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame_slave\tools\ninja\ninja.exe -t targets
   description = All primary targets available:
 

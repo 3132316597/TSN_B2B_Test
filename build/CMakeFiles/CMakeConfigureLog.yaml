@@ -21,10 +21,11 @@ events:
     names:
       - "app.yaml"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/"
+      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/application/multicore/core0/"
+    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/application/multicore/core0/"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -63,6 +64,7 @@ events:
     names:
       - "python3"
     candidate_directories:
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -73,7 +75,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -81,6 +82,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python3.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python3.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python3"
       - "C:/Windows/System32/python3.com"
       - "C:/Windows/System32/python3.exe"
       - "C:/Windows/System32/python3"
@@ -111,9 +115,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/python3.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/python3.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/python3"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python3.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python3.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python3"
       - "D:/SEGGER/JLink_V796p/python3.com"
       - "D:/SEGGER/JLink_V796p/python3.exe"
       - "D:/SEGGER/JLink_V796p/python3"
@@ -135,6 +136,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -173,6 +175,7 @@ events:
     names:
       - "python"
     candidate_directories:
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -183,7 +186,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -191,6 +193,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python"
       - "C:/Windows/System32/python.com"
       - "C:/Windows/System32/python.exe"
       - "C:/Windows/System32/python"
@@ -221,9 +226,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/python.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/python.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/python"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/python"
       - "D:/SEGGER/JLink_V796p/python.com"
       - "D:/SEGGER/JLink_V796p/python.exe"
       - "D:/SEGGER/JLink_V796p/python"
@@ -231,94 +233,7 @@ events:
     found: "D:/Python/python.exe"
     search_context:
       ENV{PATH}:
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "D:\\Cmake\\bin"
-        - "D:\\Git\\cmd"
-        - "D:\\Programs\\TOOLS\\mingw64\\bin"
-        - "D:\\Programs\\TOOLS\\arm_none_eabi\\bin"
-        - "D:\\Programs\\TOOLS\\OpenOCD\\bin"
         - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
-        - "D:\\SEGGER\\JLink_V796p"
-        - "D:\\Python"
-        - "D:\\Python\\Scripts"
-        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\chenyu.ma\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "D:\\VSCode\\bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "hpm_sdk_localized_for_board/cmake/toolchain.cmake:123 (find_program)"
-      - "hpm_sdk_localized_for_board/cmake/application.cmake:79 (include)"
-      - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:34 (find_package)"
-    mode: "program"
-    variable: "CMAKE_C_COMPILER"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "d:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc"
-    candidate_directories:
-      - "d:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/"
-    searched_directories:
-      - "d:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe"
-    search_context:
-      ENV{PATH}:
-        - "C:\\Windows\\system32"
-        - "C:\\Windows"
-        - "C:\\Windows\\System32\\Wbem"
-        - "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\"
-        - "C:\\Windows\\System32\\OpenSSH\\"
-        - "D:\\Cmake\\bin"
-        - "D:\\Git\\cmd"
-        - "D:\\Programs\\TOOLS\\mingw64\\bin"
-        - "D:\\Programs\\TOOLS\\arm_none_eabi\\bin"
-        - "D:\\Programs\\TOOLS\\OpenOCD\\bin"
-        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
-        - "D:\\SEGGER\\JLink_V796p"
-        - "D:\\Python"
-        - "D:\\Python\\Scripts"
-        - "D:\\Windows Kits\\10\\Windows Performance Toolkit\\"
-        - "C:\\Users\\chenyu.ma\\AppData\\Local\\Microsoft\\WindowsApps"
-        - "D:\\VSCode\\bin"
-  -
-    kind: "find-v1"
-    backtrace:
-      - "hpm_sdk_localized_for_board/cmake/toolchain.cmake:231 (find_program)"
-      - "hpm_sdk_localized_for_board/cmake/application.cmake:79 (include)"
-      - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:34 (find_package)"
-    mode: "program"
-    variable: "CMAKE_CXX_COMPILER"
-    description: "Path to a program."
-    settings:
-      SearchFramework: "NEVER"
-      SearchAppBundle: "NEVER"
-      CMAKE_FIND_USE_CMAKE_PATH: true
-      CMAKE_FIND_USE_CMAKE_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_SYSTEM_ENVIRONMENT_PATH: true
-      CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
-      CMAKE_FIND_USE_INSTALL_PREFIX: true
-    names:
-      - "d:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++"
-    candidate_directories:
-      - "d:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/"
-    searched_directories:
-      - "d:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe"
-    search_context:
-      ENV{PATH}:
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -357,6 +272,7 @@ events:
     names:
       - "ccache"
     candidate_directories:
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -367,7 +283,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -375,6 +290,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/ccache.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/ccache.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/ccache"
       - "C:/Windows/System32/ccache.com"
       - "C:/Windows/System32/ccache.exe"
       - "C:/Windows/System32/ccache"
@@ -405,9 +323,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/ccache.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/ccache.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/ccache"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/ccache.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/ccache.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/ccache"
       - "D:/SEGGER/JLink_V796p/ccache.com"
       - "D:/SEGGER/JLink_V796p/ccache.exe"
       - "D:/SEGGER/JLink_V796p/ccache"
@@ -429,6 +344,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -485,6 +401,7 @@ events:
     found: "D:/Cmake/share/cmake-4.1/Modules/CMakeCCompilerId.c.in"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -513,7 +430,7 @@ events:
       - "CMakeLists.txt:34 (find_package)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-      Compiler: D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe 
+      Compiler: D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe 
       Build flags: 
       Id flags:  
       
@@ -524,7 +441,7 @@ events:
       Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
       
       The C compiler identification is GNU, found in:
-        D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/4.1.0-rc1/CompilerIdC/a.out
+        D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/CMakeFiles/4.1.0-rc1/CompilerIdC/a.out
       
   -
     kind: "find-v1"
@@ -549,7 +466,7 @@ events:
       - "riscv32-unknown-elf-ar"
       - "ar"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -560,7 +477,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -568,10 +484,11 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ar.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ar.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ar.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ar.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -612,7 +529,7 @@ events:
       - "riscv32-unknown-elf-ranlib"
       - "ranlib"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -623,7 +540,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -631,10 +547,11 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ranlib.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ranlib.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ranlib.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -675,7 +592,7 @@ events:
       - "riscv32-unknown-elf-strip"
       - "strip"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -686,7 +603,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -694,10 +610,11 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-strip.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-strip.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-strip.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-strip.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -738,7 +655,7 @@ events:
       - "riscv32-unknown-elf-ld"
       - "ld"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -749,7 +666,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -757,10 +673,11 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ld.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ld.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ld.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ld.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -801,7 +718,7 @@ events:
       - "riscv32-unknown-elf-nm"
       - "nm"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -812,7 +729,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -820,10 +736,11 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-nm.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-nm.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-nm.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-nm.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -864,7 +781,7 @@ events:
       - "riscv32-unknown-elf-objdump"
       - "objdump"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -875,7 +792,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -883,10 +799,11 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objdump.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objdump.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objdump.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objdump.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -927,7 +844,7 @@ events:
       - "riscv32-unknown-elf-objcopy"
       - "objcopy"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -938,7 +855,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -946,10 +862,11 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objcopy.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objcopy.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objcopy.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objcopy.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -990,7 +907,7 @@ events:
       - "riscv32-unknown-elf-readelf"
       - "readelf"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1001,7 +918,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -1009,10 +925,11 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-readelf.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-readelf.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-readelf.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-readelf.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -1053,7 +970,7 @@ events:
       - "riscv32-unknown-elf-dlltool"
       - "dlltool"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1064,7 +981,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -1072,9 +988,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-dlltool.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-dlltool.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-dlltool"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-dlltool.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-dlltool.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-dlltool"
       - "C:/Windows/System32/riscv32-unknown-elf-dlltool.com"
       - "C:/Windows/System32/riscv32-unknown-elf-dlltool.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-dlltool"
@@ -1105,9 +1021,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-dlltool.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-dlltool.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-dlltool"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-dlltool.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-dlltool.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-dlltool"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-dlltool.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-dlltool.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-dlltool"
@@ -1126,9 +1039,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-dlltool.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-dlltool.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-dlltool"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/dlltool.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/dlltool.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/dlltool"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/dlltool.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/dlltool.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/dlltool"
       - "C:/Windows/System32/dlltool.com"
       - "C:/Windows/System32/dlltool.exe"
       - "C:/Windows/System32/dlltool"
@@ -1154,6 +1067,7 @@ events:
     found: "D:/Programs/TOOLS/mingw64/bin/dlltool.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -1194,7 +1108,7 @@ events:
       - "riscv32-unknown-elf-addr2line"
       - "addr2line"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1205,7 +1119,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -1213,10 +1126,11 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-addr2line.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-addr2line.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-addr2line.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-addr2line.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -1257,7 +1171,7 @@ events:
       - "riscv32-unknown-elf-tapi"
       - "tapi"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1268,7 +1182,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -1276,9 +1189,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-tapi.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-tapi.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-tapi"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-tapi.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-tapi.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-tapi"
       - "C:/Windows/System32/riscv32-unknown-elf-tapi.com"
       - "C:/Windows/System32/riscv32-unknown-elf-tapi.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-tapi"
@@ -1309,9 +1222,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-tapi.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-tapi.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-tapi"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-tapi.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-tapi.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-tapi"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-tapi.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-tapi.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-tapi"
@@ -1330,9 +1240,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-tapi.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-tapi.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-tapi"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/tapi.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/tapi.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/tapi"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/tapi.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/tapi.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/tapi"
       - "C:/Windows/System32/tapi.com"
       - "C:/Windows/System32/tapi.exe"
       - "C:/Windows/System32/tapi"
@@ -1363,9 +1273,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/tapi.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/tapi.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/tapi"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/tapi.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/tapi.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/tapi"
       - "D:/SEGGER/JLink_V796p/tapi.com"
       - "D:/SEGGER/JLink_V796p/tapi.exe"
       - "D:/SEGGER/JLink_V796p/tapi"
@@ -1387,6 +1294,7 @@ events:
     found: false
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -1429,7 +1337,7 @@ events:
       - "riscv32-unknown-elf-gcc-ar13"
       - "riscv32-unknown-elf-gcc-ar"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1440,7 +1348,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -1448,9 +1355,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13.2.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13.2.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13.2"
@@ -1481,9 +1388,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13.2.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13.2.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13.2"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13.2.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13.2.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13.2"
@@ -1502,9 +1406,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13.2.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13.2.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13.2"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13"
@@ -1535,9 +1439,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13"
@@ -1556,9 +1457,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar13.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar13.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar13"
@@ -1589,9 +1490,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar13.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar13.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar13"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar13.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar13.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar13"
@@ -1610,10 +1508,11 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar13.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar13.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar13"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -1656,7 +1555,7 @@ events:
       - "riscv32-unknown-elf-gcc-ranlib13"
       - "riscv32-unknown-elf-gcc-ranlib"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1667,7 +1566,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -1675,9 +1573,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13.2.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13.2"
@@ -1708,9 +1606,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13.2.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13.2"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13.2.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13.2"
@@ -1729,9 +1624,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13.2.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13.2"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13"
@@ -1762,9 +1657,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13"
@@ -1783,9 +1675,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib13.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib13.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib13"
@@ -1816,9 +1708,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib13.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib13.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib13"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib13.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib13.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib13"
@@ -1837,10 +1726,11 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib13.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib13.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib13"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -1887,6 +1777,7 @@ events:
     found: "D:/Cmake/share/cmake-4.1/Modules/CMakeCXXCompilerId.cpp.in"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -1915,7 +1806,7 @@ events:
       - "CMakeLists.txt:34 (find_package)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-      Compiler: D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe 
+      Compiler: D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe 
       Build flags: 
       Id flags:  
       
@@ -1926,7 +1817,7 @@ events:
       Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
       
       The CXX compiler identification is GNU, found in:
-        D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/4.1.0-rc1/CompilerIdCXX/a.out
+        D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/CMakeFiles/4.1.0-rc1/CompilerIdCXX/a.out
       
   -
     kind: "find-v1"
@@ -1953,7 +1844,7 @@ events:
       - "riscv32-unknown-elf-gcc-ar13"
       - "riscv32-unknown-elf-gcc-ar"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -1964,7 +1855,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -1972,9 +1862,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13.2.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13.2.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13.2"
@@ -2005,9 +1895,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13.2.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13.2.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13.2"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.2"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13.2.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13.2.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13.2"
@@ -2026,9 +1913,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13.2.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13.2.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13.2"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-13"
@@ -2059,9 +1946,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-13"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-13"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-13"
@@ -2080,9 +1964,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-13"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar13.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar13.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar13"
@@ -2113,9 +1997,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar13.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar13.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar13"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar13"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar13.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar13.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar13"
@@ -2134,10 +2015,11 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar13.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar13.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar13"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -2180,7 +2062,7 @@ events:
       - "riscv32-unknown-elf-gcc-ranlib13"
       - "riscv32-unknown-elf-gcc-ranlib"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2191,7 +2073,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -2199,9 +2080,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13.2.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13.2"
@@ -2232,9 +2113,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13.2.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13.2"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.2"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13.2.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13.2"
@@ -2253,9 +2131,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13.2.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13.2.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13.2"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-13"
@@ -2286,9 +2164,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-13"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-13"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-13"
@@ -2307,9 +2182,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-13"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib13.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib13.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib13"
@@ -2340,9 +2215,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib13.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib13.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib13"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib13"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib13.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib13.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib13"
@@ -2361,10 +2233,11 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib13.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib13.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib13"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -2402,14 +2275,15 @@ events:
       CMAKE_FIND_USE_CMAKE_SYSTEM_PATH: true
       CMAKE_FIND_USE_INSTALL_PREFIX: true
     names:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -2467,7 +2341,7 @@ events:
       - "riscv32-unknown-elf-gcc-ar"
       - "riscv32-unknown-elf-gcc-ar"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2478,7 +2352,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -2486,9 +2359,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-"
@@ -2519,9 +2392,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-"
@@ -2540,9 +2410,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ar-"
@@ -2573,9 +2443,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ar-"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar-"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ar-"
@@ -2594,10 +2461,11 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ar-"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -2640,7 +2508,7 @@ events:
       - "riscv32-unknown-elf-gcc-ranlib"
       - "riscv32-unknown-elf-gcc-ranlib"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "C:/Windows/System32/"
       - "C:/Windows/"
       - "C:/Windows/System32/wbem/"
@@ -2651,7 +2519,6 @@ events:
       - "D:/Programs/TOOLS/mingw64/bin/"
       - "D:/Programs/TOOLS/arm_none_eabi/bin/"
       - "D:/Programs/TOOLS/OpenOCD/bin/"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/"
       - "D:/SEGGER/JLink_V796p/"
       - "D:/Python/"
       - "D:/Python/Scripts/"
@@ -2659,9 +2526,9 @@ events:
       - "C:/Users/chenyu.ma/AppData/Local/Microsoft/WindowsApps/"
       - "D:/VSCode/bin/"
     searched_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-"
@@ -2692,9 +2559,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-"
@@ -2713,9 +2577,9 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.com"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.exe"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.com"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-.com"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-.exe"
       - "C:/Windows/System32/riscv32-unknown-elf-gcc-ranlib-"
@@ -2746,9 +2610,6 @@ events:
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-.com"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-.exe"
       - "D:/Programs/TOOLS/OpenOCD/bin/riscv32-unknown-elf-gcc-ranlib-"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.com"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-.exe"
-      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib-"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-.com"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-.exe"
       - "D:/SEGGER/JLink_V796p/riscv32-unknown-elf-gcc-ranlib-"
@@ -2767,10 +2628,11 @@ events:
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-.com"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-.exe"
       - "D:/VSCode/bin/riscv32-unknown-elf-gcc-ranlib-"
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.com"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
+      - "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.com"
+    found: "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"
@@ -2809,7 +2671,7 @@ events:
       policy_scope: true
       bypass_provider: false
       hints:
-        - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board"
+        - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/application/multicore/core0/hpm_sdk_localized_for_board"
       names:
         - "hpm-sdk"
       path_suffixes:
@@ -2826,31 +2688,32 @@ events:
         CMAKE_FIND_ROOT_PATH_MODE: "BOTH"
     candidates:
       -
-        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/pkgRedirects/hpm-sdkConfig.cmake"
+        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/CMakeFiles/pkgRedirects/hpm-sdkConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/pkgRedirects/hpm-sdk-config.cmake"
+        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/CMakeFiles/pkgRedirects/hpm-sdk-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/hpm-sdkConfig.cmake"
+        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/application/multicore/core0/hpm_sdk_localized_for_board/hpm-sdkConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/hpm-sdk-config.cmake"
+        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/application/multicore/core0/hpm_sdk_localized_for_board/hpm-sdk-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/cmake/hpm-sdkConfig.cmake"
+        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/application/multicore/core0/hpm_sdk_localized_for_board/cmake/hpm-sdkConfig.cmake"
         mode: "config"
         reason: "no_exist"
     found:
-      path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake"
+      path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/application/multicore/core0/hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake"
       mode: "config"
       version: ""
     search_context:
       ENV{PATH}:
+        - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
         - "C:\\Windows\\system32"
         - "C:\\Windows"
         - "C:\\Windows\\System32\\Wbem"

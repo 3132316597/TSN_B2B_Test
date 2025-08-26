@@ -37,7 +37,8 @@
         "master.h": "c",
         "data.h": "c",
         "ringbuffer.h": "c",
-        "stdint.h": "c"
+        "stdint.h": "c",
+        "tswlowlevel.h": "c"
     },
     "cortex-debug.variableUseNaturalFormat": false,
     "git.ignoreLimitWarning": true,

@@ -1,4 +1,4 @@
-# Install script for directory: D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board
+# Install script for directory: D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/application/multicore/core0/hpm_sdk_localized_for_board
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,24 +34,24 @@ endif()
 
 # Set path to fallback-tool for dependency-resolution.
 if(NOT DEFINED CMAKE_OBJDUMP)
-  set(CMAKE_OBJDUMP "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objdump.exe")
+  set(CMAKE_OBJDUMP "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objdump.exe")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/build_tmp/arch/cmake_install.cmake")
-  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/build_tmp/boards/cmake_install.cmake")
-  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/build_tmp/soc/cmake_install.cmake")
-  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/build_tmp/drivers/cmake_install.cmake")
-  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/build_tmp/utils/cmake_install.cmake")
-  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/build_tmp/components/cmake_install.cmake")
-  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/build_tmp/middleware/cmake_install.cmake")
+  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/build_tmp/arch/cmake_install.cmake")
+  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/build_tmp/boards/cmake_install.cmake")
+  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/build_tmp/soc/cmake_install.cmake")
+  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/build_tmp/drivers/cmake_install.cmake")
+  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/build_tmp/utils/cmake_install.cmake")
+  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/build_tmp/components/cmake_install.cmake")
+  include("D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/build_tmp/middleware/cmake_install.cmake")
 
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/build_tmp/install_local_manifest.txt"
+  file(WRITE "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/build_tmp/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()
