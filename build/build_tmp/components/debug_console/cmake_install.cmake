@@ -1,4 +1,4 @@
-# Install script for directory: D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/hpm_sdk_localized_for_board/components/debug_console
+# Install script for directory: D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/components/debug_console
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

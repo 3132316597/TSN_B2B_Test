@@ -6,7 +6,7 @@ events:
     backtrace:
       - "hpm_sdk_localized_for_board/cmake/application.cmake:66 (find_path)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "path"
     variable: "APP_YAML_PATH"
     description: "Path to a file."
@@ -21,8 +21,8 @@ events:
     names:
       - "app.yaml"
     candidate_directories:
-      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/"
-    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/"
+      - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/"
+    found: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/"
     search_context:
       ENV{PATH}:
         - "D:\\SEGGER\\toolchains\\rv32imac_zicsr_zifencei_multilib_b_ext-win\\bin"
@@ -49,7 +49,7 @@ events:
       - "hpm_sdk_localized_for_board/cmake/python.cmake:4 (find_program)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:69 (include)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "python_exec"
     description: "Path to a program."
@@ -160,7 +160,7 @@ events:
       - "hpm_sdk_localized_for_board/cmake/python.cmake:16 (find_program)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:69 (include)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "python_exec"
     description: "Path to a program."
@@ -257,7 +257,7 @@ events:
       - "hpm_sdk_localized_for_board/cmake/ccache.cmake:8 (find_program)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:82 (include)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CCACHE_FOUND"
     description: "Path to a program."
@@ -368,7 +368,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineSystem.cmake:207 (message)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     message: |
       The target system is: Generic -  - 
       The host system is: Windows - 10.0.26100 - AMD64
@@ -382,7 +382,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -427,7 +427,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:122 (CMAKE_DETERMINE_COMPILER_ID)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     message: |
       Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
       Compiler: D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe 
@@ -450,7 +450,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_AR"
     description: "Path to a program."
@@ -513,7 +513,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_RANLIB"
     description: "Path to a program."
@@ -576,7 +576,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_STRIP"
     description: "Path to a program."
@@ -639,7 +639,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_LINKER"
     description: "Path to a program."
@@ -702,7 +702,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_NM"
     description: "Path to a program."
@@ -765,7 +765,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_OBJDUMP"
     description: "Path to a program."
@@ -828,7 +828,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_OBJCOPY"
     description: "Path to a program."
@@ -891,7 +891,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_READELF"
     description: "Path to a program."
@@ -954,7 +954,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_DLLTOOL"
     description: "Path to a program."
@@ -1092,7 +1092,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_ADDR2LINE"
     description: "Path to a program."
@@ -1155,7 +1155,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:200 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_TAPI"
     description: "Path to a program."
@@ -1319,7 +1319,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1537,7 +1537,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCCompiler.cmake:201 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_C_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -1758,7 +1758,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "file"
     variable: "src_in"
     description: "Path to a file."
@@ -1803,7 +1803,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:125 (CMAKE_DETERMINE_COMPILER_ID)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     message: |
       Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
       Compiler: D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe 
@@ -1826,7 +1826,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -2044,7 +2044,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineCXXCompiler.cmake:207 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_CXX_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -2262,7 +2262,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:61 (_cmake_find_compiler)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_ASM_COMPILER"
     description: "ASM compiler"
@@ -2308,7 +2308,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:170 (CMAKE_DETERMINE_COMPILER_ID_VENDOR)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     message: |
       Checking whether the ASM compiler is GNU using "--version" matched "(GNU assembler)|(GCC)|(Free Software Foundation)":
       riscv32-unknown-elf-gcc.exe (gc891d8dc23e) 13.2.0
@@ -2323,7 +2323,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_ASM_COMPILER_AR"
     description: "A wrapper around 'ar' adding the appropriate '--plugin' option for the GCC compiler"
@@ -2490,7 +2490,7 @@ events:
       - "D:/Cmake/share/cmake-4.1/Modules/CMakeDetermineASMCompiler.cmake:268 (include)"
       - "hpm_sdk_localized_for_board/cmake/application.cmake:276 (enable_language)"
       - "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake:11 (include)"
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     mode: "program"
     variable: "CMAKE_ASM_COMPILER_RANLIB"
     description: "A wrapper around 'ranlib' adding the appropriate '--plugin' option for the GCC compiler"
@@ -2653,7 +2653,7 @@ events:
   -
     kind: "find_package-v1"
     backtrace:
-      - "CMakeLists.txt:40 (find_package)"
+      - "CMakeLists.txt:34 (find_package)"
     name: "hpm-sdk"
     configs:
       -
@@ -2671,7 +2671,7 @@ events:
       policy_scope: true
       bypass_provider: false
       hints:
-        - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/hpm_sdk_localized_for_board"
+        - "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board"
       names:
         - "hpm-sdk"
       path_suffixes:
@@ -2696,19 +2696,19 @@ events:
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/hpm_sdk_localized_for_board/hpm-sdkConfig.cmake"
+        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/hpm-sdkConfig.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/hpm_sdk_localized_for_board/hpm-sdk-config.cmake"
+        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/hpm-sdk-config.cmake"
         mode: "config"
         reason: "no_exist"
       -
-        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/hpm_sdk_localized_for_board/cmake/hpm-sdkConfig.cmake"
+        path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/cmake/hpm-sdkConfig.cmake"
         mode: "config"
         reason: "no_exist"
     found:
-      path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake"
+      path: "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake"
       mode: "config"
       version: ""
     search_context:

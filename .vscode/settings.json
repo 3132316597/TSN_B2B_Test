@@ -1,6 +1,6 @@
 {
     "cmake.generator": "Ninja",
-    "cmake.sourceDirectory": "${workspaceFolder}/application",
+    "cmake.sourceDirectory": "${workspaceFolder}/application/multicore/core0",
     "cmake.defaultVariants": {
         "buildType": {
             "choices": {

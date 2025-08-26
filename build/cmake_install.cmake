@@ -1,4 +1,4 @@
-# Install script for directory: D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application
+# Install script for directory: D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

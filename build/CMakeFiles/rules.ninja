@@ -109,7 +109,7 @@ rule C_STATIC_LIBRARY_LINKER__hpm_sdk_gcc_startup_lib_debug
 # Rule for re-running cmake.
 
 rule RERUN_CMAKE
-  command = D:\Cmake\bin\cmake.exe --regenerate-during-build -SD:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\application -BD:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\build
+  command = D:\Cmake\bin\cmake.exe --regenerate-during-build -SD:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\application\multicore\core0 -BD:\Programs\HPMPrj\S_Lx_HPM_Porj\TSN_Frame\build
   description = Re-running CMake...
   generator = 1
 

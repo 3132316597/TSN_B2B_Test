@@ -18,10 +18,10 @@
 APP_BIN_DIR:PATH=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build
 
 //application source directory
-APP_SRC_DIR:PATH=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application
+APP_SRC_DIR:PATH=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0
 
 //Path to a file.
-APP_YAML_PATH:PATH=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application
+APP_YAML_PATH:PATH=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0
 
 //Path to a file.
 BOARD_SEARCH_DIR:PATH=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/board
@@ -68,8 +68,8 @@ CMAKE_ASM_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 // MinSizeRel ...
 CMAKE_BUILD_TYPE:STRING=debug
 
-//CXX compiler
-CMAKE_CXX_COMPILER:STRING=D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe
+//No help, variable specified on the command line.
+CMAKE_CXX_COMPILER:FILEPATH=D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -94,8 +94,8 @@ CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//C compiler
-CMAKE_C_COMPILER:STRING=D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe
+//No help, variable specified on the command line.
+CMAKE_C_COMPILER:FILEPATH=D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe
 
 //A wrapper around 'ar' adding the appropriate '--plugin' option
 // for the GCC compiler
@@ -281,7 +281,7 @@ CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 HPM_BUILD_TYPE:UNINITIALIZED=flash_xip
 
 //The directory containing a CMake configuration file for hpm-sdk.
-hpm-sdk_DIR:PATH=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/hpm_sdk_localized_for_board/cmake
+hpm-sdk_DIR:PATH=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/cmake
 
 //Value Computed by CMake
 hpm_sdk_BINARY_DIR:STATIC=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/build_tmp
@@ -290,7 +290,7 @@ hpm_sdk_BINARY_DIR:STATIC=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/build
 hpm_sdk_IS_TOP_LEVEL:STATIC=OFF
 
 //Value Computed by CMake
-hpm_sdk_SOURCE_DIR:STATIC=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/hpm_sdk_localized_for_board
+hpm_sdk_SOURCE_DIR:STATIC=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board
 
 //Path to a program.
 python_exec:FILEPATH=D:/Python/python.exe
@@ -302,7 +302,7 @@ tsn_frame_BINARY_DIR:STATIC=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build
 tsn_frame_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
-tsn_frame_SOURCE_DIR:STATIC=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application
+tsn_frame_SOURCE_DIR:STATIC=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0
 
 
 ########################
@@ -406,7 +406,7 @@ CMAKE_GENERATOR_PLATFORM:INTERNAL=
 CMAKE_GENERATOR_TOOLSET:INTERNAL=
 //Source directory with the top level CMakeLists.txt file for this
 // project
-CMAKE_HOME_DIRECTORY:INTERNAL=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application
+CMAKE_HOME_DIRECTORY:INTERNAL=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0
 //ADVANCED property for variable: CMAKE_LINKER
 CMAKE_LINKER-ADVANCED:INTERNAL=1
 //Name of CMakeLists files to read

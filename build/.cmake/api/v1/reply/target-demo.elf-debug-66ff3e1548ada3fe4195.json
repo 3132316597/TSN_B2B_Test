@@ -1,0 +1,461 @@
+{
+	"artifacts" : 
+	[
+		{
+			"path" : "output/demo.elf"
+		}
+	],
+	"backtrace" : 5,
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"add_executable",
+			"include",
+			"find_package",
+			"target_link_libraries",
+			"sdk_ld_options",
+			"sdk_linker_global_symbols"
+		],
+		"files" : 
+		[
+			"hpm_sdk_localized_for_board/cmake/application.cmake",
+			"hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake",
+			"CMakeLists.txt",
+			"hpm_sdk_localized_for_board/CMakeLists.txt",
+			"hpm_sdk_localized_for_board/cmake/cmake-ext.cmake",
+			"hpm_sdk_localized_for_board/cmake/toolchain/ld.cmake",
+			"hpm_sdk_localized_for_board/cmake/toolchain/gcc.cmake",
+			"hpm_sdk_localized_for_board/cmake/toolchain.cmake",
+			"hpm_sdk_localized_for_board/soc/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 2
+			},
+			{
+				"command" : 2,
+				"file" : 2,
+				"line" : 34,
+				"parent" : 0
+			},
+			{
+				"file" : 1,
+				"parent" : 1
+			},
+			{
+				"command" : 1,
+				"file" : 1,
+				"line" : 11,
+				"parent" : 2
+			},
+			{
+				"file" : 0,
+				"parent" : 3
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 30,
+				"parent" : 4
+			},
+			{
+				"file" : 3
+			},
+			{
+				"command" : 3,
+				"file" : 3,
+				"line" : 233,
+				"parent" : 6
+			},
+			{
+				"command" : 1,
+				"file" : 0,
+				"line" : 79,
+				"parent" : 4
+			},
+			{
+				"file" : 7,
+				"parent" : 8
+			},
+			{
+				"command" : 1,
+				"file" : 7,
+				"line" : 233,
+				"parent" : 9
+			},
+			{
+				"file" : 6,
+				"parent" : 10
+			},
+			{
+				"command" : 1,
+				"file" : 6,
+				"line" : 16,
+				"parent" : 11
+			},
+			{
+				"file" : 5,
+				"parent" : 12
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 4,
+				"parent" : 13
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 184,
+				"parent" : 14
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 5,
+				"parent" : 13
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 184,
+				"parent" : 16
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 6,
+				"parent" : 13
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 184,
+				"parent" : 18
+			},
+			{
+				"command" : 4,
+				"file" : 5,
+				"line" : 7,
+				"parent" : 13
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 184,
+				"parent" : 20
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 19,
+				"parent" : 11
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 184,
+				"parent" : 22
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 20,
+				"parent" : 11
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 184,
+				"parent" : 24
+			},
+			{
+				"command" : 4,
+				"file" : 6,
+				"line" : 21,
+				"parent" : 11
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 184,
+				"parent" : 26
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 265,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 85,
+				"parent" : 28
+			},
+			{
+				"command" : 5,
+				"file" : 0,
+				"line" : 270,
+				"parent" : 4
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 85,
+				"parent" : 30
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 28,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 85,
+				"parent" : 32
+			},
+			{
+				"command" : 5,
+				"file" : 3,
+				"line" : 32,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 85,
+				"parent" : 34
+			},
+			{
+				"file" : 8
+			},
+			{
+				"command" : 4,
+				"file" : 8,
+				"line" : 14,
+				"parent" : 36
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 184,
+				"parent" : 37
+			},
+			{
+				"command" : 4,
+				"file" : 8,
+				"line" : 17,
+				"parent" : 36
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 184,
+				"parent" : 39
+			},
+			{
+				"command" : 4,
+				"file" : 3,
+				"line" : 182,
+				"parent" : 6
+			},
+			{
+				"command" : 3,
+				"file" : 4,
+				"line" : 184,
+				"parent" : 41
+			}
+		]
+	},
+	"dependencies" : 
+	[
+		{
+			"backtrace" : 7,
+			"id" : "app::@6890427a1f51a3e7e1df"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "hpm_sdk_lib::@dd6fcd45be7fd0b23a49"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "hpm_sdk_gcc_lib::@dd6fcd45be7fd0b23a49"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "hpm_sdk_gcc_startup_lib::@dd6fcd45be7fd0b23a49"
+		}
+	],
+	"id" : "demo.elf::@6890427a1f51a3e7e1df",
+	"link" : 
+	{
+		"commandFragments" : 
+		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-Wl,-Map=D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/output/demo.map",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-Wl,--whole-archive",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "lib\\libhpm_sdk_gcc_startup_lib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "lib\\libhpm_sdk_gcc_lib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "lib\\libhpm_sdk_lib.a",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 7,
+				"fragment" : "-Wl,--no-whole-archive",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 15,
+				"fragment" : "-static",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 17,
+				"fragment" : "-nostartfiles",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 19,
+				"fragment" : "-Wl,--gc-sections",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 21,
+				"fragment" : "-Wl,--print-memory-usage",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 23,
+				"fragment" : "--specs=nano.specs",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 25,
+				"fragment" : "-u _printf_float",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 27,
+				"fragment" : "-u _scanf_float",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 29,
+				"fragment" : "-Xlinker --defsym=_heap_size=0x4000",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 31,
+				"fragment" : "-Xlinker --defsym=_stack_size=0x4000",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 33,
+				"fragment" : "-Xlinker --defsym=_flash_size=8M",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 35,
+				"fragment" : "-Xlinker --defsym=_extram_size=32M",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 38,
+				"fragment" : "-mabi=ilp32",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 40,
+				"fragment" : "-march=rv32imac_zicsr_zifencei_zba_zbb_zbc_zbs",
+				"role" : "libraries"
+			},
+			{
+				"backtrace" : 42,
+				"fragment" : "-T D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/hpm_sdk_localized_for_board/soc/HPM6E00/HPM6E80/toolchains/gcc/flash_xip.ld",
+				"role" : "libraries"
+			}
+		],
+		"language" : "C"
+	},
+	"name" : "demo.elf",
+	"nameOnDisk" : "demo.elf",
+	"paths" : 
+	{
+		"build" : ".",
+		"source" : "."
+	},
+	"sourceGroups" : 
+	[
+		{
+			"name" : "Object Libraries",
+			"sourceIndexes" : 
+			[
+				0,
+				1,
+				2,
+				3,
+				4
+			]
+		}
+	],
+	"sources" : 
+	[
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/app.dir/D_/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/common/multicore_common.c.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/app.dir/src/Bsp/RingBuffer.c.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/app.dir/src/Bsp/mac_table.c.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/app.dir/src/Bsp/tswLowLevel.c.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/app.dir/src/main.c.obj",
+			"sourceGroupIndex" : 0
+		}
+	],
+	"type" : "EXECUTABLE"
+}
