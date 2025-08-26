@@ -41,7 +41,7 @@ static tsw_phy_status_t phy1_last_status = {0};        // PHY1上次状态缓存
 static tsw_phy_status_t phy2_last_status = {0};        // PHY2上次状态缓存
 static tsw_phy_status_t phy3_last_status = {0};        // PHY3上次状态缓存
 uint32_t irq_frame_cnt = 0;                      // 中断计数器
-
+uint8_t recv_global_port = 0, send_global_port = 1;  // 全局收发端口标识
 static tsw_frame_t frame[16] = {0};                     // TSW帧结构数组
 // 非缓存区定义（接收缓冲区）
 ATTR_PLACE_AT_FAST_RAM_WITH_ALIGNMENT(TSW_SOC_DATA_BUS_WIDTH)
@@ -503,8 +503,6 @@ int Bsp_InitTsw(void)
     return 0;
 }
 
-uint8_t recv_gobal_port = 0, send_gobal_port = 1;  // 全局收发端口标识
-
 /**
  * @brief 系统级TSW帧发送函数（底层实现）
  * @param payload 待发送数据指针
@@ -525,10 +523,10 @@ int Bsp_TransmitTswFrameLowLevel(uint8_t *payload, int len)
         g_tsw_queue = 7;
     }
 
-    if (send_gobal_port == 255) {
+    if (send_global_port == 255) {
         send_port = TSW_TSNPORT_PORT3 + 1;
     } else {
-        send_port = send_gobal_port;
+        send_port = send_global_port;
     }
 
     tx_hdr_desc_t hdr = {
@@ -592,7 +590,7 @@ int Bsp_ReceiveTswFrameLowLevel(uint8_t *payload, int toReadLen)
 
             memcpy(recv_frame, data_buf_e, frameLen);
             memcpy(payload, data_buf_e + TSW_RX_HDR_LEN, bodyLen);
-            recv_gobal_port = rx_hdr->rx_hdr0_bm.src_port;
+            recv_global_port = rx_hdr->rx_hdr0_bm.src_port;
         }
     }
     if (!ByteRingBuf_IsEmpty(&TSWCurveFifo_p)) {
@@ -603,7 +601,7 @@ int Bsp_ReceiveTswFrameLowLevel(uint8_t *payload, int toReadLen)
             
             memcpy(recv_frame, data_buf_p, frameLen);
             memcpy(payload, data_buf_p + TSW_RX_HDR_LEN, bodyLen);
-            recv_gobal_port = rx_hdr->rx_hdr0_bm.src_port;
+            recv_global_port = rx_hdr->rx_hdr0_bm.src_port;
         }
     }
 

@@ -1,7 +1,7 @@
 #include "board.h" 
 #include "tswLowLevel.h"
 #include <stdio.h>
-
+#include "bsp_gptmr.h" 
 
 uint64_t idx = 0;
 uint8_t recv_data[1536];
@@ -83,19 +83,37 @@ int DATA_MAKE()
     return 0;
 }
 
+static void TswSendCallback_500ms(void)
+{
+    uint32_t value = 0;
+    if (!(tsw_get_link_status(TSW_TSNPORT_PORT1) || tsw_get_link_status(TSW_TSNPORT_PORT2)))
+    {
+        printf("[TSW Send] No port linked, skip\n");  // 调试用，稳定后可注释
+        return;
+    }
+    DATA_MAKE();    
 
+    g_tsw_queue = 1;        
+    send_global_port = 1;  
+
+    Bsp_TransmitTswFrameLowLevel(s_FrameTx, 1024);
+    g_tsw_queue = 0; 
+    Bsp_TransmitTswFrameLowLevel(s_FrameTx, 62);
+
+    tsw_fpe_get_mms_statistics_counter(HPM_TSW, TSW_TSNPORT_PORT1, tsw_fpe_mms_fragment_tx_counter, &value);
+    printf("FPE MMS Fragment Tx Counter: %d\n", value);
+    printf("=========================================================\n");
+}
 int main(void)
 {
-    uint64_t i = 0;
     board_init();
     printf("TSW Frame Demo Start !\n");
-
     if (Bsp_InitTsw() != status_success) {
         printf("TSW init failed !\n");
         while (1) {
         }
     }
-    DATA_MAKE();
+    Bsp_InitTswSendTmr(TswSendCallback_500ms);
     while (1) {
         if(tsw_get_link_status(TSW_TSNPORT_PORT1))
         {
@@ -104,17 +122,6 @@ int main(void)
                 len = Bsp_ReceiveTswFrameLowLevel(recv_data, sizeof(recv_data)); 
                 printf("Recv Frame Len : %d\n", len);
             }
-            if(i%5000==0)
-            {
-                i++;
-                int ret =  Bsp_TransmitTswFrameLowLevel(s_FrameTx, sizeof(s_FrameTx));
-                if (ret != status_success) {
-                    printf("TSW transmit failed !\n");
-                }else if (ret == status_success) {
-                    printf("TSW transmit success !\n");
-                }
-            }
-            i++;
         }
     }
 }

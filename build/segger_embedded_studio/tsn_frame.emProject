@@ -67,6 +67,12 @@
             <file file_name="..\..\application\multicore\core0\src\Bsp\RingBuffer.c">
               <configuration Name="Common" build_object_file_name="$(IntDir)/RingBuffer.c$(OBJ)"/>
             </file>
+            <file file_name="..\..\application\multicore\core0\src\Bsp\bsp_gptmr.c">
+              <configuration Name="Common" build_object_file_name="$(IntDir)/bsp_gptmr.c$(OBJ)"/>
+            </file>
+            <file file_name="..\..\application\multicore\core0\src\Bsp\bsp_mchtmr.c">
+              <configuration Name="Common" build_object_file_name="$(IntDir)/bsp_mchtmr.c$(OBJ)"/>
+            </file>
             <file file_name="..\..\application\multicore\core0\src\Bsp\mac_table.c">
               <configuration Name="Common" build_object_file_name="$(IntDir)/mac_table.c$(OBJ)"/>
             </file>

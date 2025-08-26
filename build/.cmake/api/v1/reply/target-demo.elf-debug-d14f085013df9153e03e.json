@@ -420,7 +420,9 @@
 				1,
 				2,
 				3,
-				4
+				4,
+				5,
+				6
 			]
 		}
 	],
@@ -436,6 +438,18 @@
 			"backtrace" : 5,
 			"isGenerated" : true,
 			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/app.dir/src/Bsp/RingBuffer.c.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/app.dir/src/Bsp/bsp_gptmr.c.obj",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 5,
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/build/CMakeFiles/app.dir/src/Bsp/bsp_mchtmr.c.obj",
 			"sourceGroupIndex" : 0
 		},
 		{
