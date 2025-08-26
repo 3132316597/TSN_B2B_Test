@@ -1,7 +1,6 @@
 #ifndef __RingBuffer_H
 #define __RingBuffer_H
 
-#include "stdio.h"
 #include "base.h"
 
 /// <summary>

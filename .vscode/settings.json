@@ -35,7 +35,9 @@
         "hpm_tsw_phy_common.h": "c",
         "hpm_tsw_regs.h": "c",
         "master.h": "c",
-        "data.h": "c"
+        "data.h": "c",
+        "ringbuffer.h": "c",
+        "stdint.h": "c"
     },
     "cortex-debug.variableUseNaturalFormat": false,
     "git.ignoreLimitWarning": true,

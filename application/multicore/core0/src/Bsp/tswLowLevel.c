@@ -14,10 +14,8 @@
 #include "board.h"
 #include "tswLowLevel.h"
 #include "hpm_tsw_drv.h"
-#include "hpm_gpio_drv.h"
 #include "hpm_yt8531.h"
 #include "RingBuffer.h"
-#include <math.h>
 #include "mac_table.h" 
 
 /* Private macro ------------------------------------------------------------- */
@@ -235,70 +233,19 @@ void tsw_self_adaptive_port_speed(void)
     }
 }
 
-/**
- * @brief 重置TSW PHY端口1
- * @return 状态码：status_success-成功，status_fail-失败
- * @note 初始化PHY1硬件，配置基本工作模式
- */
-hpm_stat_t reset_tsw_phy_port1(void)
-{
+hpm_stat_t reset_tsw_phy_port(uint8_t port) {
     yt8531_config_t phy_config;
-
-    yt8531_reset(HPM_TSW, TSW_TSNPORT_PORT1, 0);
-    board_delay_ms(10);  // 等待复位完成
+    yt8531_reset(HPM_TSW, port, 0);
+    board_delay_ms(10); // 等待复位完成
     
     yt8531_basic_mode_default_config(HPM_TSW, &phy_config);
-    if (yt8531_basic_mode_init(HPM_TSW, TSW_TSNPORT_PORT1, 0, &phy_config) == true) {
-        printf("TSW phy1 init passed !\n");
+    if (yt8531_basic_mode_init(HPM_TSW, port, 0, &phy_config)) {
+        printf("TSW phy%d init passed !\n", port + 1); // port为0-based
+        return status_success;
     } else {
-        printf("TSW phy1 init failed !\n");
+        printf("TSW phy%d init failed !\n", port + 1);
         return status_fail;
     }
-    return status_success;
-}
-
-/**
- * @brief 重置TSW PHY端口2
- * @return 状态码：status_success-成功，status_fail-失败
- * @note 初始化PHY2硬件，配置基本工作模式
- */
-hpm_stat_t reset_tsw_phy_port2(void)
-{
-    yt8531_config_t phy_config;
-
-    yt8531_reset(HPM_TSW, TSW_TSNPORT_PORT2, 0);
-    board_delay_ms(10);  // 等待复位完成
-    
-    yt8531_basic_mode_default_config(HPM_TSW, &phy_config);
-    if (yt8531_basic_mode_init(HPM_TSW, TSW_TSNPORT_PORT2, 0, &phy_config) == true) {
-        printf("TSW phy2 init passed !\n");
-    } else {
-        printf("TSW phy2 init failed !\n");
-        return status_fail;
-    }
-    return status_success;
-}
-
-/**
- * @brief 重置TSW PHY端口3
- * @return 状态码：status_success-成功，status_fail-失败
- * @note 初始化PHY3硬件，配置基本工作模式
- */
-hpm_stat_t reset_tsw_phy_port3(void)
-{
-    yt8531_config_t phy_config;
-
-    yt8531_reset(HPM_TSW, TSW_TSNPORT_PORT3, 0);
-    board_delay_ms(10);  // 等待复位完成
-    
-    yt8531_basic_mode_default_config(HPM_TSW, &phy_config);
-    if (yt8531_basic_mode_init(HPM_TSW, TSW_TSNPORT_PORT3, 0, &phy_config) == true) {
-        printf("TSW phy3 init passed !\n");
-    } else {
-        printf("TSW phy3 init failed !\n");
-        return status_fail;
-    }
-    return status_success;
 }
 
 /**
@@ -394,11 +341,12 @@ hpm_stat_t tsw_init(TSW_Type *ptr)
     tsw_ep_set_mdio_config(HPM_TSW, TSW_TSNPORT_PORT3, 19);
 
     /* 初始化PHY硬件 */
-    reset_tsw_phy_port3();
+    reset_tsw_phy_port(TSW_TSNPORT_PORT1);
     board_delay_ms(10);
-    reset_tsw_phy_port1();
+    reset_tsw_phy_port(TSW_TSNPORT_PORT2);
     board_delay_ms(10);
-    reset_tsw_phy_port2();
+    reset_tsw_phy_port(TSW_TSNPORT_PORT3);
+    board_delay_ms(10);
 
     yt8531_reset(HPM_TSW, TSW_TSNPORT_PORT1, 0);
     yt8531_reset(HPM_TSW, TSW_TSNPORT_PORT2, 0);
@@ -453,53 +401,50 @@ bool tsw_get_link_status(uint8_t index)
  * @return 0-成功，其他-失败
  * @note 初始化GPIO、PHY复位、定时器及TSW控制器
  */
-int Bsp_InitTsw(void)
-{
+int Bsp_InitTsw(void) {
     tsw_fpe_config_t fpe_config;
 
-    /* 初始化TSW相关GPIO */
     board_init_tsw();
 
-    //tsw_get_mac_address(mac2cpu);
     tsw_mac_table_init(mac2cpu, TSW_DEFAULT_VID);
-    /* 复位PHY端口（硬件复位） */
-    board_tsw_phy_set(TSW_TSNPORT_PORT1, 0);
-    board_delay_ms(10);
-    board_tsw_phy_set(TSW_TSNPORT_PORT1, 1);
-    board_delay_ms(10);
+    
+    uint8_t ports[] = {TSW_TSNPORT_PORT1, TSW_TSNPORT_PORT2, TSW_TSNPORT_PORT3};
+    for (int i = 0; i < 3; i++) {
+        board_tsw_phy_set(ports[i], 0);
+        board_delay_ms(10);
+        board_tsw_phy_set(ports[i], 1);
+        board_delay_ms(10);
+    }
 
-    board_tsw_phy_set(TSW_TSNPORT_PORT2, 0);
-    board_delay_ms(10);
-    board_tsw_phy_set(TSW_TSNPORT_PORT2, 1);
-    board_delay_ms(10);
-
-    board_tsw_phy_set(TSW_TSNPORT_PORT3, 0);
-    board_delay_ms(10);
-    board_tsw_phy_set(TSW_TSNPORT_PORT3, 1);
-    board_delay_ms(10);
-
-    /* 创建系统定时器（用于周期性检测） */
     board_timer_create(1, sys_timer_callback);
 
-    /* 配置TSW时钟延迟 */
     tsw_set_rtc_time_increment(HPM_TSW, (10 << 24));
-    tsw_set_port_clock_delay(HPM_TSW, TSW_TSNPORT_PORT1, 0x8, 0);
-    tsw_set_port_clock_delay(HPM_TSW, TSW_TSNPORT_PORT2, 0x8, 0);
-    tsw_set_port_clock_delay(HPM_TSW, TSW_TSNPORT_PORT3, 0x8, 0);
+    for (int i = 0; i < 3; i++) {
+        tsw_set_port_clock_delay(HPM_TSW, ports[i], 0x8, 0);
+    }
 
-    /* 初始化TSW控制器 */
-    if (tsw_init(HPM_TSW) == 0) {
-        tsw_fpe_get_default_mms_ctrl_config(HPM_TSW, TSW_TSNPORT_PORT1, &fpe_config);
-        tsw_fpe_set_mms_ctrl(HPM_TSW, TSW_TSNPORT_PORT1, &fpe_config);
-        tsw_fpe_enable_mms(HPM_TSW, TSW_TSNPORT_PORT1);
-        tsw_fpe_get_default_mms_ctrl_config(HPM_TSW, TSW_TSNPORT_PORT2, &fpe_config);
-        tsw_fpe_set_mms_ctrl(HPM_TSW, TSW_TSNPORT_PORT2, &fpe_config);
-        tsw_fpe_enable_mms(HPM_TSW, TSW_TSNPORT_PORT2);
-        printf("TSW initialization success !!!\n");
-    } else {
-        printf("TSW initialization fails !!!\n");
+    const int MAX_RETRY = 3;
+    int retry = 0;
+    hpm_stat_t init_result = status_fail;
+    while (retry < MAX_RETRY) {
+        init_result = tsw_init(HPM_TSW);
+        if (init_result == status_success) break;
+        retry++;
+        printf("TSW init retry %d/%d...\n", retry, MAX_RETRY);
+        board_delay_ms(100);
+    }
+
+    if (init_result != status_success) {
+        printf("TSW initialization failed after %d retries !!!\n", MAX_RETRY);
         return -1;
     }
+
+    for (int i = 0; i < 2; i++) { 
+        tsw_fpe_get_default_mms_ctrl_config(HPM_TSW, ports[i], &fpe_config);
+        tsw_fpe_set_mms_ctrl(HPM_TSW, ports[i], &fpe_config);
+        tsw_fpe_enable_mms(HPM_TSW, ports[i]);
+    }
+    printf("TSW initialization success !!!\n");
     return 0;
 }
 
@@ -514,7 +459,6 @@ ATTR_RAMFUNC
 int Bsp_TransmitTswFrameLowLevel(uint8_t *payload, int len)
 {
     hpm_stat_t stat_s;
-    uint32_t port;
     static uint32_t i = 0;
     uint8_t id;
     uint8_t send_port = 1;
@@ -536,24 +480,19 @@ int Bsp_TransmitTswFrameLowLevel(uint8_t *payload, int len)
 
     id = i++ % TSW_SOC_DMA_MAX_DESC_COUNT;
 
+    uint8_t *tx_buf = (uint8_t*)tsw_tx_buff[id];
+    memcpy(tx_buf, &hdr, sizeof(tx_hdr_desc_t));
+    memcpy(tx_buf + sizeof(tx_hdr_desc_t), payload, len);
+    int total_len = len + sizeof(tx_hdr_desc_t);
     
-    memcpy((void*)tsw_tx_buff[id], &hdr, sizeof(tx_hdr_desc_t));
-    memcpy((void*)tsw_tx_buff[id] + sizeof(tx_hdr_desc_t), payload, len);
-    len += sizeof(tx_hdr_desc_t);
-    
-    // stat = tsw_send_frame_check_response(HPM_TSW, (void*)tsw_tx_buff[id], len, id);
-    stat_s = tsw_send_frame(HPM_TSW, (void*)tsw_tx_buff[id], len, id);
-
+    stat_s = tsw_send_frame(HPM_TSW, tx_buf, total_len, id);
     if (stat_s == status_success) {
         send_success_time++;
+        return 0;
     } else {
         send_fail_time++;
-        if (port == 8080) {
-            /* 预留端口8080的特定处理逻辑 */
-        }
         return -1;
     }
-    port = tsw_tx_buff[id][50] << 8 | tsw_tx_buff[id][51];
     return 0;
 }
 
@@ -571,7 +510,7 @@ void Bsp_GetTswMacAddr(uint8_t *pMac)
  * @param payload 接收数据缓冲区指针
  * @param toReadLen 期望读取的长度（未使用）
  * @return 实际接收的帧长度
- * @note 从环形缓冲区读取帧数据，区分高/低优先级帧，已移除queue处理
+ * @note 从环形缓冲区读取帧数据，区分高/低优先级帧
  */
 ATTR_RAMFUNC
 int Bsp_ReceiveTswFrameLowLevel(uint8_t *payload, int toReadLen)
@@ -610,38 +549,42 @@ int Bsp_ReceiveTswFrameLowLevel(uint8_t *payload, int toReadLen)
 }
 
 /**
- * @brief TSW端口CPU中断服务程序
- * @note 处理TSW接收中断，将帧分类后存入对应环形缓冲区
+ * @brief TSW端口CPU中断服务程序（优化版）
+ * @note 
  */
 SDK_DECLARE_EXT_ISR_M(IRQn_TSW_0, isr_tsw_port_cpu)
-void isr_tsw_port_cpu(void)
-{
-    intc_m_disable_irq(IRQn_TSW_0);
-    hpm_stat_t stat_r;
-    static int idx = 0;
+void isr_tsw_port_cpu(void) {
+    intc_m_disable_irq(IRQn_TSW_0); 
+    static volatile int idx = 0;    
     rx_flag = true;
-    idx = idx % TSW_SOC_DMA_MAX_DESC_COUNT;
-    stat_r = tsw_recv_frame(HPM_TSW, (void*)&frame[idx]);
+    idx = (idx + 1) % TSW_SOC_DMA_MAX_DESC_COUNT; 
 
+    hpm_stat_t stat_r = tsw_recv_frame(HPM_TSW, (void*)&frame[idx]);
     rx_hdr_desc_t *rx_hdr = (rx_hdr_desc_t *)&tsw_rx_buff[frame[idx].id][0];
+
     if (stat_r == status_success) {
         tsw_mac_table_learn((void*)tsw_rx_buff[frame[idx].id], frame[idx].length);
+        
         bool is_preemptible = (rx_hdr->rx_hdr0_bm.fpe == 1);
+        sByteRingBuffer *ring_buf = is_preemptible ? &TSWCurveFifo_p : &TSWCurveFifo_e;
 
-        if (!is_preemptible) {
-            ByteRingBuf_WriteFrame(&TSWCurveFifo_e, (void*)&tsw_rx_buff[frame[idx].id][0], frame[idx].length);
-            FPE_0++;
-        }else {
-            ByteRingBuf_WriteFrame(&TSWCurveFifo_p, (void*)&tsw_rx_buff[frame[idx].id][0], frame[idx].length);
-            FPE_1++;
+        int required_space = frame[idx].length;
+        int free_space = ByteRingBuf_FreeSize(ring_buf);
+        
+        if (free_space >= required_space) {
+            ByteRingBuf_WriteFrame(ring_buf, (void*)&tsw_rx_buff[frame[idx].id][0], frame[idx].length);
+            is_preemptible ? FPE_1++ : FPE_0++; // 更新帧计数
+        } else {
+            recv_fail_time++;
+            printf("[TSW ISR] Buffer overflow! Required: %d, Free: %d\n", required_space, free_space);
         }
-        memcpy(data_buf_e, (void*)&tsw_rx_buff[frame[idx].id][0], frame[idx].length);
+        
         tsw_commit_recv_desc(HPM_TSW, (void*)tsw_rx_buff[frame[idx].id], TSW_RECV_BUFF_LEN, frame[idx].id);
     } else {
         tsw_commit_recv_desc(HPM_TSW, (void*)tsw_rx_buff[frame[idx].id], TSW_RECV_BUFF_LEN, frame[idx].id);
+        recv_fail_time++;
     }
     
-    idx++;
     irq_frame_cnt = idx;
     intc_m_enable_irq_with_priority(IRQn_TSW_0, 7);
 }

@@ -62,6 +62,12 @@
       <folder Name="core0">
         <folder Name="src">
           <configuration Name="Common" build_intermediate_directory="Output/$(Configuration)/Obj/$(ProjectName)/application/multicore/core0/src"/>
+          <folder Name="App">
+            <configuration Name="Common" build_intermediate_directory="Output/$(Configuration)/Obj/$(ProjectName)/application/multicore/core0/src/App"/>
+            <file file_name="..\..\application\multicore\core0\src\App\data_u.c">
+              <configuration Name="Common" build_object_file_name="$(IntDir)/data_u.c$(OBJ)"/>
+            </file>
+          </folder>
           <folder Name="Bsp">
             <configuration Name="Common" build_intermediate_directory="Output/$(Configuration)/Obj/$(ProjectName)/application/multicore/core0/src/Bsp"/>
             <file file_name="..\..\application\multicore\core0\src\Bsp\RingBuffer.c">

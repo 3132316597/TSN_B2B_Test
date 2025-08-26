@@ -328,14 +328,14 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "app::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-app-debug-aff0385097017b7edf3e.json",
+					"jsonFile" : "target-app-debug-1325aeab44a89b074855.json",
 					"name" : "app",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "demo.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-demo.elf-debug-d14f085013df9153e03e.json",
+					"jsonFile" : "target-demo.elf-debug-bd12151bc2368257e664.json",
 					"name" : "demo.elf",
 					"projectIndex" : 0
 				},
