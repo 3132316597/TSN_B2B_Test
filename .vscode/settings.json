@@ -1,0 +1,42 @@
+{
+    "cmake.generator": "Ninja",
+    "cmake.sourceDirectory": "${workspaceFolder}/application",
+    "cmake.defaultVariants": {
+        "buildType": {
+            "choices": {
+                "flash_xip": {
+                    "short":"flash_xip",
+                    "long":"先楫构建 - flash构建",
+                    "buildType": "flash_xip"
+                }
+            }
+        }
+    },
+    "cmake.configureEnvironment": {
+        "GNURISCV_TOOLCHAIN_PATH": "${workspaceFolder}/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win",
+        //"HPM_SDK_BASE": "D:/SEGGER/sdk1.9.0"
+    },
+    "cmake.configureSettings": {
+        "CMAKE_MAKE_PROGRAM": "${workspaceFolder}/tools/ninja/ninja.exe",
+    },
+    "cmake.configureArgs": [
+        "-DBOARD_SEARCH_PATH=${workspaceFolder}",
+        "-DBOARD_SEARCH_DIR=${workspaceFolder}/board",
+        "-DHPM_BUILD_TYPE=flash_xip",
+        "-DCMAKE_BUILD_TYPE=debug"
+    ],
+
+    "files.associations": {
+        "hpm_clock_drv.h": "c",
+        "board.h": "c",
+        "frame_preemption_ingress.h": "c",
+        "hpm_tsw_drv.h": "c",
+        "hpm_common.h": "c",
+        "hpm_tsw_phy_common.h": "c",
+        "hpm_tsw_regs.h": "c",
+        "master.h": "c",
+        "data.h": "c"
+    },
+    "cortex-debug.variableUseNaturalFormat": false,
+    "git.ignoreLimitWarning": true,
+}

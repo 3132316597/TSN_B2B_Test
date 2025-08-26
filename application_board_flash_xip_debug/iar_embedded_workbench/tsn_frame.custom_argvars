@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iarUserArgVars>
+<group name="HPM_SDK" active="true">
+<variable>
+<name>HPM_SDK_BASE</name>
+<value>D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/hpm_sdk_localized_for_board</value>
+</variable>
+</group>
+</iarUserArgVars>
