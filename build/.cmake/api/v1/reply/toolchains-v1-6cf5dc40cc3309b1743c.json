@@ -7,7 +7,7 @@
 			{
 				"id" : "GNU",
 				"implicit" : {},
-				"path" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe",
+				"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe",
 				"version" : ""
 			},
 			"language" : "ASM",
@@ -29,7 +29,7 @@
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : []
 				},
-				"path" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe",
+				"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe",
 				"version" : "13.2.0"
 			},
 			"language" : "C",
@@ -50,7 +50,7 @@
 					"linkFrameworkDirectories" : [],
 					"linkLibraries" : []
 				},
-				"path" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe",
+				"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe",
 				"version" : "13.2.0"
 			},
 			"language" : "CXX",

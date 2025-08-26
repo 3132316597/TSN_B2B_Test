@@ -2411,8 +2411,13 @@
     <group><name>multicore</name>
       <group><name>core0</name>
         <group><name>src</name>
+          <group><name>App</name>
+            <file><name>D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/src/App/data_u.c</name></file>
+          </group>
           <group><name>Bsp</name>
             <file><name>D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/src/Bsp/RingBuffer.c</name></file>
+            <file><name>D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/src/Bsp/bsp_gptmr.c</name></file>
+            <file><name>D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/src/Bsp/bsp_mchtmr.c</name></file>
             <file><name>D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/src/Bsp/mac_table.c</name></file>
             <file><name>D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/application/multicore/core0/src/Bsp/tswLowLevel.c</name></file>
           </group>

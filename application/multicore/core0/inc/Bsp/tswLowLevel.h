@@ -58,7 +58,7 @@ hpm_stat_t reset_tsw_phy_port1(void);
 hpm_stat_t reset_tsw_phy_port2(void);
 hpm_stat_t reset_tsw_phy_port3(void);
 
-extern uint8_t g_tsw_queue;
+extern uint8_t g_tsw_queue, recv_global_port, send_global_port;
 extern bool rx_flag;
 extern uint32_t g_tsw_headerBuf[4];
 extern uint32_t irq_frame_cnt;

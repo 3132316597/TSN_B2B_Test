@@ -87,7 +87,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-addr2line.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-addr2line.exe"
 		},
 		{
 			"name" : "CMAKE_AR",
@@ -103,7 +103,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ar.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ar.exe"
 		},
 		{
 			"name" : "CMAKE_ASM_COMPILER",
@@ -119,7 +119,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe"
 		},
 		{
 			"name" : "CMAKE_ASM_COMPILER_AR",
@@ -135,7 +135,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_ASM_COMPILER_RANLIB",
@@ -151,7 +151,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_ASM_COMPILER_WORKS",
@@ -351,11 +351,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "CXX compiler"
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe"
+			"type" : "STRING",
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-g++.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_AR",
@@ -371,7 +371,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_COMPILER_RANLIB",
@@ -387,7 +387,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_CXX_FLAGS",
@@ -479,11 +479,11 @@
 				},
 				{
 					"name" : "HELPSTRING",
-					"value" : "No help, variable specified on the command line."
+					"value" : "C compiler"
 				}
 			],
-			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe"
+			"type" : "STRING",
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_AR",
@@ -499,7 +499,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ar.exe"
 		},
 		{
 			"name" : "CMAKE_C_COMPILER_RANLIB",
@@ -515,7 +515,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-gcc-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_C_FLAGS",
@@ -855,7 +855,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ld.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ld.exe"
 		},
 		{
 			"name" : "CMAKE_LIST_FILE_NAME",
@@ -975,7 +975,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-nm.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-nm.exe"
 		},
 		{
 			"name" : "CMAKE_NUMBER_OF_MAKEFILES",
@@ -1003,7 +1003,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objcopy.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objcopy.exe"
 		},
 		{
 			"name" : "CMAKE_OBJDUMP",
@@ -1019,7 +1019,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objdump.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-objdump.exe"
 		},
 		{
 			"name" : "CMAKE_PLATFORM_INFO_INITIALIZED",
@@ -1155,7 +1155,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ranlib.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-ranlib.exe"
 		},
 		{
 			"name" : "CMAKE_READELF",
@@ -1171,7 +1171,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-readelf.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-readelf.exe"
 		},
 		{
 			"name" : "CMAKE_ROOT",
@@ -1391,7 +1391,7 @@
 				}
 			],
 			"type" : "FILEPATH",
-			"value" : "D:/SEGGER/toolchains/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-strip.exe"
+			"value" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame/tools/rv32imac_zicsr_zifencei_multilib_b_ext-win/bin/riscv32-unknown-elf-strip.exe"
 		},
 		{
 			"name" : "CMAKE_SUPPRESS_DEVELOPER_WARNINGS",
