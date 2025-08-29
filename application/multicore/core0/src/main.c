@@ -95,8 +95,6 @@ int main(void)
             if(rx_flag)
             {
 
-
-                ;;;
                 len = Bsp_ReceiveTswFrameLowLevel(recv_data, sizeof(recv_data)); 
                 printf("Recv Frame Len : %d\n", len);
                 printf("\n[Main] RX Header Details: \n");
