@@ -84,6 +84,8 @@ int main(void)
         while (1) {
         }
     }
+    ;;;
+    
     Bsp_InitTswSendTmr(TswSendCallback_500ms);
     while (1) {
         if(tsw_get_link_status(TSW_TSNPORT_PORT1))
