@@ -88,6 +88,9 @@ int main(void)
     while (1) {
         if(tsw_get_link_status(TSW_TSNPORT_PORT1))
         {
+
+
+            ;;;
             if (g_rx_hdr_updated) {
                 local_rx_hdr = g_rx_hdr_cache;
                 g_rx_hdr_updated = false;
