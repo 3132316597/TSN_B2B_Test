@@ -41,7 +41,7 @@ static tsw_phy_status_t phy3_last_status = {0};        // PHY3上次状态缓存
 uint32_t irq_frame_cnt = 0;                      // 中断计数器
 uint8_t recv_global_port = 0, send_global_port = 1;  // 全局收发端口标识
 static tsw_frame_t frame[16] = {0};                     // TSW帧结构数组
-
+u_int16_t recv_frame_len = 0;
 // 定义全局帧头缓存（初始化为空）
 rx_hdr_desc_t g_rx_hdr_cache = {0};
 // 定义更新标志（初始无更新）
@@ -317,8 +317,8 @@ hpm_stat_t tsw_init(TSW_Type *ptr)
     tsw_set_mac_table(HPM_TSW, 0, tsw_dst_port_cpu, mac2cpu, TSW_DEFAULT_VID);
     
     tsw_set_cam_vlan_port(ptr);
-    tsw_set_unknown_frame_action(HPM_TSW, tsw_dst_port_cpu | tsw_dst_port_3 | tsw_dst_port_2 | tsw_dst_port_1);
-    tsw_set_broadcast_frame_action(HPM_TSW, tsw_dst_port_cpu | tsw_dst_port_3 | tsw_dst_port_2 | tsw_dst_port_1);
+    // tsw_set_unknown_frame_action(HPM_TSW, tsw_dst_port_cpu | tsw_dst_port_3 | tsw_dst_port_2 | tsw_dst_port_1);
+    // tsw_set_broadcast_frame_action(HPM_TSW, tsw_dst_port_cpu | tsw_dst_port_3 | tsw_dst_port_2 | tsw_dst_port_1);
     //tsw_set_internal_frame_action(HPM_TSW, tsw_dst_port_cpu | tsw_dst_port_3 | tsw_dst_port_2 | tsw_dst_port_1);
 
     // tsw_enable_store_forward_mode(HPM_TSW, TSW_TSNPORT_PORT1);
@@ -550,13 +550,12 @@ int Bsp_ReceiveTswFrameLowLevel(uint8_t *payload, int toReadLen)
             recv_global_port = rx_hdr->rx_hdr0_bm.src_port;
         }
     }
-
     rx_flag = false;
     return bodyLen;
 }
 
 /**
- * @brief TSW端口CPU中断服务程序（优化版）
+ * @brief TSW端口CPU中断服务程序
  * @note 
  */
 SDK_DECLARE_EXT_ISR_M(IRQn_TSW_0, isr_tsw_port_cpu)
@@ -565,35 +564,30 @@ void isr_tsw_port_cpu(void) {
     static volatile int idx = 0;    
     rx_flag = true;
     idx = (idx + 1) % TSW_SOC_DMA_MAX_DESC_COUNT; 
-
     hpm_stat_t stat_r = tsw_recv_frame(HPM_TSW, (void*)&frame[idx]);
     rx_hdr_desc_t *rx_hdr = (rx_hdr_desc_t *)&tsw_rx_buff[frame[idx].id][0];
 
     if (stat_r == status_success) {
         tsw_mac_table_learn((void*)tsw_rx_buff[frame[idx].id], frame[idx].length);
-        
+        recv_frame_len = frame[idx].length - TSW_RX_HDR_LEN;
         bool is_preemptible = (rx_hdr->rx_hdr0_bm.fpe == 1);
         sByteRingBuffer *ring_buf = is_preemptible ? &TSWCurveFifo_p : &TSWCurveFifo_e;
-
         int required_space = frame[idx].length;
         int free_space = ByteRingBuf_FreeSize(ring_buf);
-        
         if (free_space >= required_space) {
             ByteRingBuf_WriteFrame(ring_buf, (void*)&tsw_rx_buff[frame[idx].id][0], frame[idx].length);
-            is_preemptible ? FPE_1++ : FPE_0++; // 更新帧计数
+            is_preemptible ? FPE_1++ : FPE_0++; 
             g_rx_hdr_cache = *rx_hdr;
             g_rx_hdr_updated = true;
         } else {
             recv_fail_time++;
             printf("[TSW ISR] Buffer overflow! Required: %d, Free: %d\n", required_space, free_space);
         }
-        
         tsw_commit_recv_desc(HPM_TSW, (void*)tsw_rx_buff[frame[idx].id], TSW_RECV_BUFF_LEN, frame[idx].id);
     } else {
         tsw_commit_recv_desc(HPM_TSW, (void*)tsw_rx_buff[frame[idx].id], TSW_RECV_BUFF_LEN, frame[idx].id);
         recv_fail_time++;
     }
-    
     irq_frame_cnt = idx;
     intc_m_enable_irq_with_priority(IRQn_TSW_0, 7);
 }

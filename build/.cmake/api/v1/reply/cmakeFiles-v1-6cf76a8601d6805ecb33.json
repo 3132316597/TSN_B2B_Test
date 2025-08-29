@@ -1,0 +1,262 @@
+{
+	"inputs" : 
+	[
+		{
+			"path" : "CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/hpm-sdk-config.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/application.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/python.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/cmake-ext.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/toolchain.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/toolchain/gcc.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/toolchain/ld.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/ide.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/ide/iar.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/ide/segger.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/extra_flags.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/ccache.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/version.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/cmake/hex.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/CMakeFiles/4.1.0-rc1/CMakeSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeSystemSpecificInitialize.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/CMakeFiles/4.1.0-rc1/CMakeCCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/CMakeFiles/4.1.0-rc1/CMakeCXXCompiler.cmake"
+		},
+		{
+			"isGenerated" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build/CMakeFiles/4.1.0-rc1/CMakeASMCompiler.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeSystemSpecificInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeGenericSystem.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeInitializeConfigs.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeCInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Compiler/GNU-C.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Compiler/CMakeCommonCompilerMacros.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Internal/CMakeCLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeCXXInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeLanguageInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Compiler/GNU-CXX.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Platform/Generic.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeCommonLanguageInclude.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Internal/CMakeCXXLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Internal/CMakeCommonLinkerInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/CMakeASMInformation.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Compiler/GNU-ASM.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Compiler/GNU.cmake"
+		},
+		{
+			"isCMake" : true,
+			"isExternal" : true,
+			"path" : "D:/Cmake/share/cmake-4.1/Modules/Internal/CMakeASMLinkerInformation.cmake"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/arch/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/arch/riscv/l1c/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/boards/CMakeLists.txt"
+		},
+		{
+			"isExternal" : true,
+			"path" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/board/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/soc/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/soc/HPM6E00/HPM6E80/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/drivers/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/utils/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/components/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/components/tsw_phy/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/components/tsw_phy/yt8531/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/components/debug_console/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/middleware/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/middleware/eclipse_threadx/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/middleware/CMSIS/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/middleware/ptpd/CMakeLists.txt"
+		},
+		{
+			"path" : "hpm_sdk_localized_for_board/middleware/wifi/CMakeLists.txt"
+		}
+	],
+	"kind" : "cmakeFiles",
+	"paths" : 
+	{
+		"build" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/build",
+		"source" : "D:/Programs/HPMPrj/S_Lx_HPM_Porj/TSN_Frame_slave/application/multicore/core0"
+	},
+	"version" : 
+	{
+		"major" : 1,
+		"minor" : 1
+	}
+}

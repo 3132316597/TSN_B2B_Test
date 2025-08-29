@@ -60,7 +60,7 @@ hpm_stat_t reset_tsw_phy_port(uint8_t port);
 
 extern rx_hdr_desc_t g_rx_hdr_cache;          // 缓存最新的帧头数据
 extern volatile bool g_rx_hdr_updated;        // 帧头更新标志（中断置位，主函数清零）
-
+extern uint16_t recv_frame_len;
 extern uint8_t g_tsw_queue, recv_global_port, send_global_port;
 extern bool rx_flag;
 extern uint32_t g_tsw_headerBuf[4];

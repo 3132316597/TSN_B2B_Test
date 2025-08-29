@@ -38,7 +38,8 @@
         "data.h": "c",
         "ringbuffer.h": "c",
         "stdint.h": "c",
-        "tswlowlevel.h": "c"
+        "tswlowlevel.h": "c",
+        "hpm_gptmr_drv.h": "c"
     },
     "cortex-debug.variableUseNaturalFormat": false,
     "git.ignoreLimitWarning": true,

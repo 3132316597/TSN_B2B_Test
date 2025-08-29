@@ -276,10 +276,6 @@
 	[
 		{
 			"backtrace" : 7,
-			"id" : "app::@6890427a1f51a3e7e1df"
-		},
-		{
-			"backtrace" : 7,
 			"id" : "hpm_sdk_lib::@dd6fcd45be7fd0b23a49"
 		},
 		{
@@ -289,6 +285,10 @@
 		{
 			"backtrace" : 7,
 			"id" : "hpm_sdk_gcc_startup_lib::@dd6fcd45be7fd0b23a49"
+		},
+		{
+			"backtrace" : 7,
+			"id" : "app::@6890427a1f51a3e7e1df"
 		}
 	],
 	"id" : "demo.elf::@6890427a1f51a3e7e1df",
